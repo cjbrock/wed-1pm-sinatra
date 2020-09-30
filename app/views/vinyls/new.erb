@@ -1,0 +1,16 @@
+<form method="POST" action="/vinyls">
+    Genre: <input type="text" name="genre">
+    Artist: <input type="text" name="artist">
+    Album: <input type="text" name="album">
+    Condition: <input type="text" name="condition">
+    Size: <input type="text" name="size">
+    <input type="text" name="user_id">
+    <input type="submit">
+</form>
+
+    t.string  "genre"
+    t.string  "artist"
+    t.string  "album"
+    t.string  "condition"
+    t.string  "size"
+    t.integer "user_id"
