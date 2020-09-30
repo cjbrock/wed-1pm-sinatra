@@ -14,3 +14,12 @@
     t.string  "condition"
     t.string  "size"
     t.integer "user_id"
+
+
+    Reference code:
+
+        <select name="user_id">
+        <% @users.each do | user |%>
+            <option value="<%= user.id %>"><%= user.username %></option>
+        <% end %>
+    </select><br />
